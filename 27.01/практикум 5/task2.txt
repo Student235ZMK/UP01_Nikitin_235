@@ -1,0 +1,22 @@
+@startuml 
+start 
+: Получение данных из SetListView; 
+:sum = 0; 
+:count = 0; 
+repeat 
+: Получение элемента пиmber из data; 
+if (number % 8 == 0?) then (да) 
+: Добавить пumber k sum; 
+:count++; 
+else (нет) 
+:Не добавлять; 
+endif 
+repeat while (EЕсть еще элементы?) 
+if (count > 0?) then (да) 
+:average = sum / count; 
+:Вывод результата в ResultLabel; 
+else (нет) 
+:Вывод "NO" в ResultLabel; 
+endif 
+stop 
+@enduml

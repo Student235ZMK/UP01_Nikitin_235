@@ -1,0 +1,19 @@
+@startuml 
+start 
+: Получение данных из SetListView; 
+: Инициализация sum = 0; 
+repeat 
+: Получение элемента т из data; 
+if (m% 10 = 6 ит % 6 == 0?) then (да) 
+: Добавить т к sum; 
+else (нет) 
+:Не добавлять; 
+endif
+repeat while (Есть еще элементы?) 
+if (sum > 0) then (да) 
+:Вывод результата в RezultLabel; 
+else (нет) 
+:Вывод "Чисел нет" в RezultLabel; 
+endif 
+stop 
+@enduml

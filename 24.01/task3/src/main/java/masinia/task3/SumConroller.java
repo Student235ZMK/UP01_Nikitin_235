@@ -23,7 +23,7 @@ public class SumConroller {
 
     @FXML
     void OkOnAction(ActionEvent event) {
-
+    
     }
 
 }

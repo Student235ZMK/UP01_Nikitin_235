@@ -1,0 +1,16 @@
+@startuml 
+start 
+:Получение текстового значения из nTextField; 
+:Ввод N; 
+if (N > 0?) then (да) 
+:Инициализация sum = 0; 
+:for і от N до 2N; 
+repeat 
+:sum = sum + j*j; 
+repeat while (i <= 2 * N) 
+:Вывод sum; 
+else
+:Вывод "Введите число > 0"; 
+endif
+stop
+@enduml

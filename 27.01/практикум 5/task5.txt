@@ -1,0 +1,18 @@
+@startuml 
+start 
+:Ввод №; 
+:sum = 0; 
+:a = 1, b = 1; 
+repeat 
+:k = 1; 
+repeat while (k <= N) 
+if (k > 1) then (да) 
+:a=3*b+2* a; 
+:b = 2 * a + b; 
+endif 
+:term = Math.pow(2, k) / ((1+ Math.pow(a, 2) + Math.pow(b, 2)) * factorial(k)); sum += term; 
+:k++; 
+:repeat while (k <= N); 
+:Вывод: sum; 
+stop 
+@enduml

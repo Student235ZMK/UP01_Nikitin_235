@@ -1,0 +1,16 @@
+@startuml 
+start 
+:Получение ainput из a TextField; 
+:Получить nіпput из nTextField; 
+:Преобразование alnput в А (Double); 
+:Преобразование nInput в N (Integer); 
+:Инициализация sum = 1; 
+:Инициализация current Term = 1; 
+:for і от 1 до N;
+repeat 
+:currentTerm = currentTerm * A; 
+:currentTerm = currentTerm + sum; 
+repeat while (i <= N) 
+:Вывод sum; 
+stop 
+@enduml
